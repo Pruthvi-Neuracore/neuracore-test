@@ -16,9 +16,9 @@
 
 [Neuracore](https://www.neuracore.com/) provides a **unified platform** for the entire lifecycle of Physical and Embodied AI. Built on years of foundational research. Neuracore is **fast**, **accurate**, and **scalable**. Constantly updated for performance and flexibility, our platform excels at high-frequency synchronized data logging, real-time visualization, cloud-native policy training, and low-latency edge deployment.
 
-Find detailed documentation in the [Neuracore Docs](https://docs.neuracore.com/). Get support via [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues). Join discussions on [Discord](https://discord.gg/DF5m8V6nbD)
+**Try Neuracore now:** [Sign up for a free account](https://www.neuracore.com/) and start training your robots in minutes. Find comprehensive guides in the [Neuracore Docs](https://docs.neuracore.com/), get support via [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues), and join the conversation on [Discord](https://discord.gg/DF5m8V6nbD).
 
-Request an [Enterprise Solution](mailto:licensing@neuracore.com) for tailored solutions for your business needs.
+Request an [Enterprise License](mailto:licensing@neuracore.com) for tailored solutions and commercial deployment.
 
 <a href="https://www.neuracore.com/platform" target="_blank">
   <img width="100%" src="https://github.com/user-attachments/assets/5f6e9f12-185f-4050-9e71-2e5712d49b03" alt="Neuracore Data Synchronization">
