@@ -83,9 +83,9 @@ For alternative environments consult the [Neuracore Quickstart Guide](https://do
 </details>
 
 <details open>
-<summary>Usage</summary>
+<summary><b>Usage</b></summary>
 
-### 🐍 Python
+### Python
 
 Collect multi-modal data and deploy trained policies in minutes.
 
@@ -108,7 +108,7 @@ policy = nc.policy(train_run_name="MyTrainingJob")
 action = policy.predict()
 ```
 
-### 💻 CLI
+### CLI
 
 The Neuracore CLI allows you to manage datasets, hardware, and cloud training directly from your terminal. This is the fastest way to verify your system and trigger cloud-based AI jobs.
 
