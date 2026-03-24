@@ -112,65 +112,23 @@ action = policy.predict()
 
 The Neuracore CLI allows you to manage datasets, hardware, and cloud training directly from your terminal. This is the fastest way to verify your system and trigger cloud-based AI jobs.
 
-**1. Account & Connection**
-
-Before streaming data, authenticate your machine and verify your robot's hardware connection.
-
 ```bash
-neuracore login
-```
-
-Then launch the background data pipeline — required for all streaming tasks:
-
-```bash
+# 1. Launch the background data pipeline (required for all streaming tasks)
 nc-data-daemon launch
-```
 
-Check hardware status and correct the CAN-bus bitrate if needed:
-
-```bash
-neuracore hardware --check-bus can0 --fix
-```
-
-**2. Data Collection Workflow**
-
-Register your robot with a URDF model:
-
-```bash
+# 2. Connect a robot via URDF and create a new dataset
 neuracore connect --name "MyRobot" --urdf "/path/to/robot.urdf"
-```
+neuracore datasets create --name "My Robot Dataset"
 
-Create a new dataset on the cloud:
-
-```bash
-neuracore datasets create --name "My Robot Dataset" --desc "Example task"
-```
-
-Start and stop recording sessions:
-
-```bash
+# 3. Start/Stop recording data streams
 neuracore record start
 neuracore record stop
-```
 
-**3. Cloud Training & Inference**
+# 4. Kick off a Diffusion Policy training run on 5 cloud GPUs
+neuracore train start --name "MyJob" --dataset "My Robot Dataset" --algo "diffusion_policy" --gpus 5
 
-Kick off a training run on Neuracore's cloud GPUs:
-
-```bash
-neuracore train start --name "MyTrainingJob" --dataset "My Robot Dataset" --algo "diffusion_policy" --gpus 5
-```
-
-Monitor progress:
-
-```bash
-neuracore train status --id "MyTrainingJob"
-```
-
-Run a trained model on a live camera source:
-
-```bash
-neuracore predict --model "MyTrainingJob" --source "top_camera"
+# 5. Run a trained model on a live camera source
+neuracore predict --model "MyJob" --source "top_camera"
 ```
 
 </details>
