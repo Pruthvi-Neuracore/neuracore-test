@@ -8,7 +8,7 @@
 
 <div>
     <a href="https://pepy.tech/project/neuracore"><img src="https://static.pepy.tech/badge/neuracore" alt="Neuracore Downloads"></a>
-    <a href="https://discord.gg/DF5m8V6nbD"><img alt="Neuracore Discord" src="https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue"></a>
+    <a href="https://discord.gg/DF5m8V6nbD"><img alt="Neuracore Discord" src="https://img.shields.io/discord/1462855035695267861?logo=discord&logoColor=white&label=Discord&color=blue"></a>
     <a href="https://www.linkedin.com/company/neuracore/"><img alt="Neuracore LinkedIn" src="https://img.shields.io/badge/LinkedIn-Blue?style=flat&logo=linkedin&logoColor=white&label=LinkedIn&color=blue"></a>
     <a href="https://www.neuracore.com/try-on-colab"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Neuracore In Colab"></a>
 </div>
@@ -24,9 +24,11 @@
 
 ## 🤖 What is Neuracore?
 
-**Neuracore** is a high-performance **Robot Learning Infrastructure** designed for large-scale data collection, real-time visualization, and cloud-native training. Neuracore enables researchers and engineers to stream complex, high-frequency robotics data from physical hardware to the cloud with minimal overhead, providing a unified platform for training and deploying state-of-the-art (SOTA) robot policies.
+[Neuracore](https://www.neuracore.com/) provides an all-in-one, high-performance **Robot Learning Platform** for the entire lifecycle of embodied AI. Built on high-frequency streaming infrastructure, Neuracore is **fast**, **accurate**, and **scalable**. It serves as a single, unified environment to **collect** multi-modal data, **train** state-of-the-art (SOTA) policies on the cloud, and **deploy** intelligent robot solutions to the edge with ultra-low latency.
 
-It is **fast**, **accurate**, and **easy to use**. Built for [Teleoperation](https://docs.neuracore.com/tasks/teleop/), [Data Logging](https://docs.neuracore.com/tasks/logging/), [Cloud Training](https://docs.neuracore.com/tasks/training/), and [Deployment](https://docs.neuracore.com/tasks/deployment/).
+Find detailed documentation in the [Neuracore Docs](https://docs.neuracore.com/). Get support via [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues). Join discussions on [Discord](https://discord.gg/DF5m8V6nbD) and the [Neuracore Community Forums](https://community.neuracore.com/)!
+
+Request an [Enterprise License](mailto:licensing@neuracore.com) for commercial use at Neuracore Licensing.
 
 <a href="https://www.neuracore.com/platform" target="_blank">
   <img width="100%" src="https://github.com/user-attachments/assets/5f6e9f12-185f-4050-9e71-2e5712d49b03" alt="Neuracore Data Synchronization">
@@ -34,45 +36,43 @@ It is **fast**, **accurate**, and **easy to use**. Built for [Teleoperation](htt
 
 ## 🌟 Key Features
 
-- 🚀 **High-Frequency Streaming**: Use the **Data Daemon** to log multi-modal sensor data (joint poses, RGB-D, force) at high frequencies.
-- 📊 **Real-Time Visualization**: Synchronize and visualize complex datasets in real-time through the Neuracore dashboard.
-- ☁️ **Cloud-Native Training**: Launch training runs for **Diffusion Policy**, **ACT**, and more directly on scalable cloud infrastructure.
-- 🤖 **Edge Deployment**: Deploy trained policies with optimized inference engines for low-latency robot control.
+- 🚀 **Collect**: Stream high-frequency joints, RGB-D, and multi-modal sensor data with the background **Data Daemon**.
+- 📊 **Visualize**: Synchronize and monitor complex robotic datasets in real-time through a unified dashboard.
+- ☁️ **Train**: Launch state-of-the-art policy training (**Diffusion Policy**, **ACT**) on scalable cloud infrastructure.
+- 🤖 **Deploy**: Execute low-latency robot control with optimized inference engines for production environments.
 
 
-# 🛠️ Installation
-To install the basic package for data logging and visualization:
+## 📚 Documentation
+
+See below for quickstart installation and usage examples. For comprehensive guidance on training, validation, prediction, and deployment, refer to our full [Neuracore Docs](https://docs.neuracore.com/).
+
+<details open>
+<summary>Install</summary>
+
+Install the `neuracore` package in a [**Python>=3.10**](https://www.python.org/) environment.
 
 ```bash
+# Basic installation for data logging
 pip install neuracore
-```
 
-**Note:** installing the `ffmpeg` binary is recommended for faster video encoding (during recording) and decoding (during playback/import). If not available, Neuracore falls back to PyAV for encoding.
-
-Linux (Debian/Ubuntu):
-
-```bash
-sudo apt-get update && sudo apt-get install -y ffmpeg
-```
-
-For training and ML development:
-```bash
+# Installation for ML and policy training
 pip install neuracore[ml]
-```
 
-For bulk importing datasets:
-```bash
+# Installation for bulk dataset imports (LeRobot, TFDS, etc.)
 pip install neuracore[import]
 ```
 
-To run our examples:
-```bash
-pip install neuracore[examples]
-```
+Consult the [Quickstart Guide](https://docs.neuracore.com/quickstart/) for specialized environments (Conda, Docker).
 
-# 🍰 A Short Taste
-Here is a short taste on what neuracore can do.
-For a detailed walk-through, please refer to the [tutorial](./docs/tutorial.md) and [documentation](#-documentation), or [try it yourself on Google Colab](https://www.neuracore.com/try-on-colab).
+</details>
+
+<details open>
+<summary>Usage</summary>
+
+### 🐍 Python API
+
+Stream high-frequency data and deploy policies in minutes.
+
 ```python
 import neuracore as nc
 
@@ -80,7 +80,7 @@ import neuracore as nc
 nc.login()
 nc.connect_robot(robot_name="MyRobot", urdf_path="/path/to/robot.urdf")
 
-# High-frequency logging
+# High-frequency data logging
 nc.start_recording()
 nc.log_joint_positions(positions={'j1': 0.1})
 nc.log_rgb(name="camera", rgb=image_array)
@@ -91,22 +91,30 @@ policy = nc.policy(train_run_name="MyJob")
 action = policy.predict()
 ```
 
-# 📚 Documentation
-- [Examples](./examples/README.md)
-- [Tutorial](./docs/tutorial.md)
-- [Training](./docs/training.md)
-- [Command Line Tools](./docs/commandline.md)
-- [Dataset Importer](./docs/dataset_importer.md)
-- [Environment Variables](./docs/environment_variable.md)
-- [Contribution Guide](./docs/contribution_guide.md)
-- [Data Daemon](./docs/data_daemon.md)
+### 💻 CLI
 
-# 💬 Community
+Control the background **Data Daemon** and monitor training runs.
 
-We are building Neuracore to help everyone accelerate their robot learning workflows, and we'd love to hear from you! Join our community to get help, share ideas, and stay updated:
+```bash
+# Start background worker
+nc-data-daemon start
 
-- [Discord](https://discord.gg/DF5m8V6nbD) - Chat with the community and get support
-- [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues) - Report bugs and request features
+# List active cloud training jobs
+neuracore training list --cloud
+```
+
+</details>
+
+<details>
+<summary>Get Support</summary>
+
+- **Documentation**: [docs.neuracore.com](https://docs.neuracore.com/)
+- **Tutorials**: [Get Started with Neuracore](./docs/tutorial.md)
+- **Discord**: [Join the Community](https://discord.gg/DF5m8V6nbD)
+- **Issues**: [GitHub Bug Reports](https://github.com/NeuracoreAI/neuracore/issues)
+
+</details>
+
 
 ## ✨ Algorithms & Performance
 
@@ -132,9 +140,7 @@ Refer to the [Imitation Learning Docs](https://docs.neuracore.com/tasks/imitatio
 
 Neuracore integrates seamlessly with leading robotics simulators and machine learning platforms.
 
-<a href="https://docs.neuracore.com/integrations/" target="_blank">
-  <img width="100%" src="https://github.com/NeuracoreAI/neuracore/raw/main/docs/assets/integrations_banner.png" alt="Neuracore integrations banner">
-</a>
+<br>
 
 | Simulators | Frameworks | ML Platforms |
 | :---: | :---: | :---: |
