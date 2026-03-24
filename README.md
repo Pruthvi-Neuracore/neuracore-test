@@ -117,40 +117,59 @@ The Neuracore CLI allows you to manage datasets, hardware, and cloud training di
 Before streaming data, authenticate your machine and verify your robot's hardware connection.
 
 ```bash
-# Login to your Neuracore account
 neuracore login
+```
 
-# Launch the background data pipeline (required for all tasks)
+Then launch the background data pipeline — required for all streaming tasks:
+
+```bash
 nc-data-daemon launch
+```
 
-# Check hardware status and fix CAN-bus bitrate
+Check hardware status and correct the CAN-bus bitrate if needed:
+
+```bash
 neuracore hardware --check-bus can0 --fix
 ```
 
 **2. Data Collection Workflow**
 
+Register your robot with a URDF model:
+
 ```bash
-# Connect a robot with a URDF model
 neuracore connect --name "MyRobot" --urdf "/path/to/robot.urdf"
+```
 
-# Create a new dataset on the cloud
+Create a new dataset on the cloud:
+
+```bash
 neuracore datasets create --name "My Robot Dataset" --desc "Example task"
+```
 
-# Start/Stop recording sessions
+Start and stop recording sessions:
+
+```bash
 neuracore record start
 neuracore record stop
 ```
 
 **3. Cloud Training & Inference**
 
+Kick off a training run on Neuracore's cloud GPUs:
+
 ```bash
-# Kick off a Diffusion Policy training run on cloud GPUs
 neuracore train start --name "MyTrainingJob" --dataset "My Robot Dataset" --algo "diffusion_policy" --gpus 5
+```
 
-# Check training progress
+Monitor progress:
+
+```bash
 neuracore train status --id "MyTrainingJob"
+```
 
-# Run a trained model on a live camera source
+Run a trained model on a live camera source:
+
+```bash
 neuracore predict --model "MyTrainingJob" --source "top_camera"
 ```
 
@@ -169,9 +188,10 @@ Refer to the [Imitation Learning Docs](https://docs.neuracore.com/tasks/imitatio
 
 | Algorithm | Type | Cloud Training | Inference Speed (ms) | Status |
 | :--- | :--- | :---: | :---: | :---: |
-| **Diffusion Policy** | Imitation | ✅ | 15-30 | Production |
-| **ACT** | Transformer | ✅ | 20-40 | Beta |
-| **VQ-BeT** | Discrete | ✅ | 10-25 | Beta |
+| **CNN-MLP** | Behavioural Cloning | ✅ | 5-10 | Production |
+| **Diffusion Policy** | Diffusion | ✅ | 15-30 | Production |
+| **ACT** | Transformer | ✅ | 20-40 | Production |
+| **pi0** | Flow Matching | ✅ | 25-50 | Beta |
 | **Custom Algorithm** | Any | ✅ | — | [Upload Yours →](https://docs.neuracore.com/custom-models/) |
 
 </details>
