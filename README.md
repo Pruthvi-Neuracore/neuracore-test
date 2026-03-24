@@ -47,6 +47,15 @@ Request an [Enterprise License](mailto:licensing@neuracore.com) for tailored sol
   <a href="https://discord.gg/DF5m8V6nbD"><img src="./docs/assets/social/logo-social-discord.png" width="2%" alt="Neuracore Discord"></a>
 </div>
 
+## 🌟 Key Features
+
+🚀 Streaming data logging with custom data types
+📊 Dataset visualization and synchronization
+☁️ Train robot learning algorithms on cloud
+🤖 Policy inference and deployment
+
+
+<br>
 
 
 ## 📄 Documentation
@@ -136,7 +145,7 @@ neuracore predict --model "MyJob" --source "top_camera"
 
 ## 💻 Supported Models
 
-Neuracore supports state-of-the-art robot learning algorithms out of the box, optimized for throughput and stability. You can also **[upload your own custom algorithms](https://docs.neuracore.com/custom-models/)** — Neuracore provides a flexible plugin interface to train, evaluate, and deploy any policy architecture on our cloud infrastructure.
+Neuracore supports state-of-the-art robot learning algorithms out of the box, optimized for throughput and stability. You can also **[upload your own custom algorithms](https://docs.neuracore.com/custom-models/)**  Our Platform provides a flexible plugin interface to collect, train, evaluate, and deploy any policy architecture on our cloud infrastructure.
 
 Neuracore natively supports leading foundation models and visuomotor policies for offline and online training. View our [Model Zoo Docs](https://docs.neuracore.com/models/) for full tuning and benchmarking details.
 
