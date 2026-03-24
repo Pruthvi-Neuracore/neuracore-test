@@ -71,7 +71,7 @@ pip install neuracore
 # For training and ML development
 pip install neuracore[ml]
 
-# For bulk importing datasets (LeRobot, TFDS, HuggingFace, etc.)
+# For bulk importing datasets 
 pip install neuracore[import]
 
 # To run our example scripts
@@ -82,7 +82,7 @@ For alternative environments consult the [Neuracore Quickstart Guide](https://do
 
 </details>
 
-<details open>
+<details>
 <summary><b>Usage</b></summary>
 
 ### Python
@@ -134,25 +134,19 @@ neuracore predict --model "MyJob" --source "top_camera"
 </details>
 
 
-## ✨ Supported Models
+## 💻 Supported Models
 
 Neuracore supports state-of-the-art robot learning algorithms out of the box, optimized for throughput and stability. You can also **[upload your own custom algorithms](https://docs.neuracore.com/custom-models/)** — Neuracore provides a flexible plugin interface to train, evaluate, and deploy any policy architecture on our cloud infrastructure.
 
-<br>
+Neuracore natively supports leading foundation models and visuomotor policies for offline and online training. View our [Model Zoo Docs](https://docs.neuracore.com/models/) for full tuning and benchmarking details.
 
-<details open><summary>Imitation Learning</summary>
-
-Refer to the [Imitation Learning Docs](https://docs.neuracore.com/tasks/imitation/) for full details.
-
-| Algorithm | Type | Cloud Training | Inference Speed (ms) | Status |
+| Algorithm | Architecture | Cloud Training | Inference Speed (ms) | Status |
 | :--- | :--- | :---: | :---: | :---: |
 | **CNN-MLP** | Behavioural Cloning | ✅ | 5-10 | Production |
-| **Diffusion Policy** | Diffusion | ✅ | 15-30 | Production |
-| **ACT** | Transformer | ✅ | 20-40 | Production |
-| **pi0** | Flow Matching | ✅ | 25-50 | Beta |
-| **Custom Algorithm** | Any | ✅ | — | [Upload Yours →](https://docs.neuracore.com/custom-models/) |
-
-</details>
+| **Diffusion Policy** | Energy-Based Diffusion | ✅ | 15-30 | Production |
+| **ACT** | Action Chunking Transformer | ✅ | 20-40 | Production |
+| **pi0** | Flow Matching (VLA) | ✅ | 25-50 | Beta |
+| **Custom Model** | Bring Your Own | ✅ | — | [Upload Yours →](https://docs.neuracore.com/custom-models/) |
 
 <br>
 
