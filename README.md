@@ -20,11 +20,13 @@
 
 Find comprehensive guides in the [Neuracore Docs](https://docs.neuracore.com/), get support via [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues), and join the conversation on [Discord](https://discord.gg/DF5m8V6nbD).
 
-Request an [Enterprise License](mailto:licensing@neuracore.com) for tailored solutions and commercial deployment.
+Request an [Enterprise Support](mailto:licensing@neuracore.com) for tailored solutions and commercial deployment.
 
 <a href="https://www.neuracore.com/platform" target="_blank">
   <img width="100%" src="https://github.com/user-attachments/assets/5f6e9f12-185f-4050-9e71-2e5712d49b03" alt="Neuracore Data Synchronization">
 </a>
+
+**have a better image that shows data synchronization**
 
 
 
@@ -44,10 +46,10 @@ Request an [Enterprise License](mailto:licensing@neuracore.com) for tailored sol
 
 ## ✨ Key Features
 
-🚀 **Collect**: Streaming data logging with custom data types
-📊 **Visualize**: Dataset visualization and synchronization
-☁️ **Train**: Train robot learning algorithms on cloud
-🤖 **Deploy**: Policy inference and deployment
+🚀 **Collect**: Streaming data logging with custom data types.
+📊 **Visualize**: Dataset visualization and synchronization.
+☁️ **Train**: Train robot learning algorithms on cloud.
+🤖 **Deploy**: Policy inference and deployment.
 
 <br>
 
@@ -136,12 +138,73 @@ neuracore predict --model "MyJob" --source "top_camera"
 
 </details>
 
+<br>
+
+## 🍰 A Short Taste
+
+Here is a brief glimpse into what Neuracore can do. For a detailed walk-through, please refer to our tutorials and comprehensive documentation.
+
+```python
+import neuracore as nc # pip install neuracore
+import time
+
+# Ensure you have an account at neuracore.com
+nc.login()
+
+# Connect to a robot with URDF
+nc.connect_robot(
+    robot_name="MyRobot", 
+    urdf_path="/path/to/robot.urdf",
+)
+
+# Create a dataset for recording
+nc.create_dataset(
+    name="My Robot Dataset",
+    description="Example dataset with multiple data types"
+)
+
+# Recording and streaming data
+nc.start_recording()
+t = time.time()
+nc.log_joint_positions(positions={'joint1': 0.5, 'joint2': -0.3}, timestamp=t)
+nc.log_rgb(name="top_camera", rgb=image_array, timestamp=t)
+
+# Stop recording, the dataset is automatically uploaded to the cloud
+nc.stop_recording()
+
+# Kick off cloud training
+job_data = nc.start_training_run(
+    name="MyTrainingJob",
+    dataset_name="My Robot Dataset",
+    algorithm_name="diffusion_policy",
+    num_gpus=5,
+    frequency=50,
+)
+
+# Load a trained model locally
+policy = nc.policy(
+    train_run_name="MyTrainingJob",
+)
+
+# Get model inputs
+nc.log_joint_positions(positions={'joint1': 0.5, 'joint2': -0.3})
+nc.log_rgb(name="top_camera", rgb=image_array)
+
+# Model Inference
+predictions = policy.predict(timeout=5)
+```
+
+<br>
+
+
 
 ## 💻 Supported Models
 
 Neuracore supports state-of-the-art robot learning algorithms out of the box, optimized for throughput and stability. You can also **[upload your own custom algorithms](https://docs.neuracore.com/custom-models/)**  Our Platform provides a flexible plugin interface to collect, train, evaluate, and deploy any policy architecture on our cloud infrastructure.
 
-Neuracore natively supports leading foundation models and visuomotor policies for offline and online training. View our [Model Zoo Docs](https://docs.neuracore.com/models/) for full tuning and benchmarking details.
+
+** Some sort of image that shows model performance**
+
 
 | Algorithm | Architecture | Cloud Training | Inference Speed (ms) | Status |
 | :--- | :--- | :---: | :---: | :---: |
@@ -181,9 +244,9 @@ If you use Neuracore in your research, please consider citing:
 
 ## 📜 License
 
-Neuracore is available under two licenses:
-- **AGPL-3.0 License**: Open-source for non-commercial use.
-- **Enterprise License**: For commercial products and priority support. Contact [licensing@neuracore.com](mailto:licensing@neuracore.com).
+Neuracore is available under the **[MIT License](https://github.com/NeuracoreAI/neuracore/blob/main/LICENSE)**.
+
+See the [`LICENSE.md`](https://github.com/NeuracoreAI/neuracore/blob/main/LICENSE) file for the complete terms and conditions regarding distribution, modification, and commercial use.
 
 <br>
 
