@@ -46,10 +46,13 @@ Request an [Enterprise Support](mailto:licensing@neuracore.com) for tailored sol
 
 ## Key Features
 
-- **Collect** — High-frequency streaming data logging with support for fully custom multi-modal data types.
-- **Visualize** — Real-time dataset visualization, playback, and precise synchronization via a unified dashboard.
-- **Train** — Frictionless deployment of state-of-the-art robot learning algorithms on scalable cloud GPU infrastructure.
-- **Deploy** — Seamless policy inference and low-latency execution engines built directly for production environments.
+**Collect** — High-frequency streaming data logging with support for fully custom multi-modal data types.
+
+**Visualize** — Real-time dataset visualization, playback, and precise synchronization via a unified dashboard.
+
+**Train** — Frictionless deployment of state-of-the-art robot learning algorithms on scalable cloud GPU infrastructure.
+
+**Deploy** — Seamless policy inference and low-latency execution engines built directly for production environments.
 
 <br>
 
@@ -138,7 +141,6 @@ neuracore predict --model "MyJob" --source "top_camera"
 
 </details>
 
-<br>
 
 <details>
 <summary><b>🍰 A Short Taste</b></summary>
@@ -197,8 +199,6 @@ predictions = policy.predict(timeout=5)
 
 </details>
 
-<br>
-
 
 
 ## 💻 Supported Models
@@ -229,9 +229,9 @@ Neuracore integrates seamlessly with leading robotics simulators and machine lea
 | :---: | :---: | :---: |
 | Mujoco, PyBullet, Isaac Gym | ROS1/ROS2, LeRobot, Bigym | Hugging Face, W&B, CometML |
 
-# 🧾 Citation
+# 📑 Citation
 
-If you use Neuracore in your research, please consider citing:
+If Neuracore accelerates your robotics research or product development, we kindly ask that you cite our platform:
 
 ```bibtex
 @software{Neuracore,
