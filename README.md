@@ -6,29 +6,14 @@
 
 
 
-<div align="center">
-
-[![Downloads](https://static.pepy.tech/badge/neuracore)](https://pepy.tech/project/neuracore)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![PyPI - Version](https://img.shields.io/pypi/v/neuracore)](https://pypi.org/project/neuracore/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Last Commit](https://img.shields.io/github/last-commit/NeuracoreAI/neuracore)](https://github.com/NeuracoreAI/neuracore/commits/main)
-
+<div>
+    <a href="https://pepy.tech/project/neuracore"><img src="https://static.pepy.tech/badge/neuracore" alt="Neuracore Downloads"></a>
+    <a href="https://discord.gg/DF5m8V6nbD"><img alt="Neuracore Discord" src="https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue"></a>
+    <a href="https://www.linkedin.com/company/neuracore/"><img alt="Neuracore LinkedIn" src="https://img.shields.io/badge/LinkedIn-Blue?style=flat&logo=linkedin&logoColor=white&label=LinkedIn&color=blue"></a>
+    <a href="https://www.neuracore.com/try-on-colab"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Neuracore In Colab"></a>
 </div>
-
-<p align="center">
-  Join our community!
-</p>
-<p align="center">
-  <a target="_blank" href="https://discord.gg/DF5m8V6nbD"><img src="https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord" alt="Discord" /></a>
-</p>
-
-<p align="center">
-  Getting started
-</p>
-<p align="center">
-  <a target="_blank" href="https://www.neuracore.com/try-on-colab"><img src="https://img.shields.io/badge/Try%20on%20Google%20Colab-303030?style=for-the-badge&logo=googlecolab" alt="Discord" /></a>
-</p>
+</div>
+<br>
 
 <div align="center">
 
@@ -167,3 +152,26 @@ If you use Neuracore in your research, please consider citing:
   year = {2026},
   url = {https://github.com/NeuracoreAI/neuracore}
 }
+```
+
+<br>
+
+## 📜 License
+
+Neuracore is available under two licenses:
+- **AGPL-3.0 License**: Open-source for non-commercial use.
+- **Enterprise License**: For commercial products and priority support. Contact [licensing@neuracore.com](mailto:licensing@neuracore.com).
+
+<br>
+
+<div align="center">
+  <a href="https://github.com/NeuracoreAI"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="3%" alt="Neuracore GitHub"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://www.linkedin.com/company/neuracore/"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-linkedin.png" width="3%" alt="Neuracore LinkedIn"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://twitter.com/neuracore"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-twitter.png" width="3%" alt="Neuracore Twitter"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://www.youtube.com/@neuracore"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-youtube.png" width="3%" alt="Neuracore YouTube"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://discord.gg/DF5m8V6nbD"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="3%" alt="Neuracore Discord"></a>
+</div>
