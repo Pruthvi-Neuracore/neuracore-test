@@ -123,6 +123,26 @@ We are building Neuracore to help everyone accelerate their robot learning workf
 - [Discord](https://discord.gg/DF5m8V6nbD) - Chat with the community and get support
 - [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues) - Report bugs and request features
 
+## ✨ Algorithms & Performance
+
+Neuracore supports state-of-the-art robot learning algorithms, optimized for throughput and stability. Tables below show training/inference capabilities.
+
+<br>
+
+<details open><summary>Imitation Learning</summary>
+
+Refer to the [Imitation Learning Docs](https://docs.neuracore.com/tasks/imitation/) for details.
+
+| Algorithm | Type | Cloud Training | Inference Speed (ms) | Status |
+| :--- | :--- | :---: | :---: | :---: |
+| **Diffusion Policy** | Imitation | ✅ | 15-30 | Production |
+| **ACT** | Transformer | ✅ | 20-40 | Beta |
+| **VQ-BeT** | Discrete | ✅ | 10-25 | Beta |
+
+</details>
+
+<br>
+
 ## 🧩 Integrations
 
 Neuracore integrates seamlessly with leading robotics simulators and machine learning platforms.
