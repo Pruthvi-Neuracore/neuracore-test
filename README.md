@@ -1,6 +1,10 @@
 <div align="center">
-  <img src="./docs/assets/neuracore_logo.jpg" alt="Neuracore Logo" width="100%">
-</div>
+  <p>
+    <a href="https://www.neuracore.com" target="_blank">
+      <img width="100%" src="./docs/assets/neuracore_logo.jpg" alt="Neuracore banner"></a>
+  </p>
+
+[English](README.md) | [Chinese](docs/zh/README.md) | [Korean](docs/ko/README.md) | [Japanese](docs/ja/README.md) | [Russian](docs/ru/README.md) | [German](docs/de/README.md) | [French](docs/fr/README.md) | [Spanish](docs/es/README.md) | [Portuguese](docs/pt/README.md)
 
 <div align="center">
 
