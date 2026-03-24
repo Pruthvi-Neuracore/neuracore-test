@@ -20,11 +20,7 @@
 </br> 
 
 
-</div>
-
-## 🤖 What is Neuracore?
-
-[Neuracore](https://www.neuracore.com/) provides an all-in-one, high-performance **Robot Learning Platform** for the entire lifecycle of embodied AI. Built on high-frequency streaming infrastructure, Neuracore is **fast**, **accurate**, and **scalable**. It serves as a single, unified environment to **collect** multi-modal data, **train** state-of-the-art (SOTA) policies on the cloud, and **deploy** intelligent robot solutions to the edge with ultra-low latency.
+[Neuracore](https://www.neuracore.com/)provides a **unified platform** for the entire lifecycle of Physical and Embodied AI. Built on years of foundational research. Neuracore is **fast**, **accurate**, and **scalable**. Constantly updated for performance and flexibility, our platform excels at high-frequency synchronized data logging, real-time visualization, cloud-native policy training, and low-latency edge deployment.
 
 Find detailed documentation in the [Neuracore Docs](https://docs.neuracore.com/). Get support via [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues). Join discussions on [Discord](https://discord.gg/DF5m8V6nbD) and the [Neuracore Community Forums](https://community.neuracore.com/)!
 
