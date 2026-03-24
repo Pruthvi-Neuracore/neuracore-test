@@ -89,53 +89,21 @@ pip install neuracore[examples]
 Here is a short taste on what neuracore can do.
 For a detailed walk-through, please refer to the [tutorial](./docs/tutorial.md) and [documentation](#-documentation), or [try it yourself on Google Colab](https://www.neuracore.com/try-on-colab).
 ```python
-import neuracore as nc # pip install neuracore
-import time
+import neuracore as nc
 
-# ensure you have an account at neuracore.com
+# Login and setup robot
 nc.login()
+nc.connect_robot(robot_name="MyRobot", urdf_path="/path/to/robot.urdf")
 
-# Connect to a robot with URDF
-nc.connect_robot(
-    robot_name="MyRobot", 
-    urdf_path="/path/to/robot.urdf",
-)
-
-# Create a dataset for recording
-nc.create_dataset(
-    name="My Robot Dataset",
-    description="Example dataset with multiple data types"
-)
-
-# Recording and streaming data
+# High-frequency logging
 nc.start_recording()
-t = time.time()
-nc.log_joint_positions(positions={'joint1': 0.5, 'joint2': -0.3}, timestamp=t)
-nc.log_rgb(name="top_camera", rgb=image_array, timestamp=t)
-# Stop recording, the dataset is automatically uploaded to the cloud
+nc.log_joint_positions(positions={'j1': 0.1})
+nc.log_rgb(name="camera", rgb=image_array)
 nc.stop_recording()
 
-# Kick off cloud training
-job_data = nc.start_training_run(
-    name="MyTrainingJob",
-    dataset_name="My Robot Dataset",
-    algorithm_name="diffusion_policy",
-    num_gpus=5,
-    frequency=50,
-    ...
-)
-
-# Load a trained model locally
-policy = nc.policy(
-    train_run_name="MyTrainingJob",
-    ...
-)
-
-# Get model inputs
-nc.log_joint_positions(positions={'joint1': 0.5, 'joint2': -0.3})
-nc.log_rgb(name="top_camera", rgb=image_array)
-# Model Inference
-predictions = policy.predict(timeout=5)
+# Deploy policy for real-time inference
+policy = nc.policy(train_run_name="MyJob")
+action = policy.predict()
 ```
 
 # 📚 Documentation
