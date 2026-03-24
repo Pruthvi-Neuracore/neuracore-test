@@ -1,10 +1,7 @@
-<div align="center">
-  <p>
-    <a href="https://www.neuracore.com" target="_blank">
-      <img width="100%" src="./docs/assets/neuracore_logo.jpg" alt="Neuracore banner"></a>
-  </p>
-
-
+<p>
+  <a href="https://www.neuracore.com" target="_blank">
+    <img width="100%" src="./docs/assets/neuracore_logo.jpg" alt="Neuracore banner"></a>
+</p>
 
 <div>
     <a href="https://pepy.tech/project/neuracore"><img src="https://static.pepy.tech/badge/neuracore" alt="Neuracore Downloads"></a>
@@ -12,19 +9,13 @@
     <a href="https://www.linkedin.com/company/neuracore/"><img alt="Neuracore LinkedIn" src="https://img.shields.io/badge/LinkedIn-Blue?style=flat&logo=linkedin&logoColor=white&label=LinkedIn&color=blue"></a>
     <a href="https://www.neuracore.com/try-on-colab"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Neuracore In Colab"></a>
 </div>
-</div>
 <br>
-
-<div align="center">
-
-</br> 
-
 
 [Neuracore](https://www.neuracore.com/)provides a **unified platform** for the entire lifecycle of Physical and Embodied AI. Built on years of foundational research. Neuracore is **fast**, **accurate**, and **scalable**. Constantly updated for performance and flexibility, our platform excels at high-frequency synchronized data logging, real-time visualization, cloud-native policy training, and low-latency edge deployment.
 
-Find detailed documentation in the [Neuracore Docs](https://docs.neuracore.com/). Get support via [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues). Join discussions on [Discord](https://discord.gg/DF5m8V6nbD) and the [Neuracore Community Forums](https://community.neuracore.com/)!
+Find detailed documentation in the [Neuracore Docs](https://docs.neuracore.com/). Get support via [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues). Join discussions on [Discord](https://discord.gg/DF5m8V6nbD)
 
-Request an [Enterprise License](mailto:licensing@neuracore.com) for commercial use at Neuracore Licensing.
+Request an [Enterprise Solution](mailto:licensing@neuracore.com) for tailored solutions for your business needs.
 
 <a href="https://www.neuracore.com/platform" target="_blank">
   <img width="100%" src="https://github.com/user-attachments/assets/5f6e9f12-185f-4050-9e71-2e5712d49b03" alt="Neuracore Data Synchronization">
@@ -166,7 +157,7 @@ Neuracore is available under two licenses:
 
 <br>
 
-<div align="center">
+<div>
   <a href="https://github.com/NeuracoreAI"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="3%" alt="Neuracore GitHub"></a>
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
   <a href="https://www.linkedin.com/company/neuracore/"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-linkedin.png" width="3%" alt="Neuracore LinkedIn"></a>
