@@ -59,11 +59,8 @@ Request an [Enterprise Support](mailto:licensing@neuracore.com) for tailored sol
 See below for quickstart installation and usage examples. For comprehensive guidance, refer to our full [Neuracore Docs](https://docs.neuracore.com/), or jump straight to a specific topic:
 
 
-
-<br>
-
 <details open>
-<summary><b>Install</b></summary>
+<summary>Install</summary>
 
 Install the `neuracore` package including all requirements in a [**Python>=3.10**](https://www.python.org/) environment.
 
@@ -92,7 +89,7 @@ For alternative environments consult the [Neuracore Quickstart Guide](https://do
 </details>
 
 <details>
-<summary><b>Usage</b></summary>
+<summary>Usage</summary>
 
 ### Python
 
@@ -144,7 +141,7 @@ neuracore predict --model "MyJob" --source "top_camera"
 
 
 <details>
-<summary><b>🍰 A Short Taste</b></summary>
+<summary>🍰 A Short Taste</summary>
 
 Here is a brief glimpse into what Neuracore can do. For a detailed walk-through, please refer to our tutorials and comprehensive documentation.
 
@@ -210,6 +207,7 @@ predictions = policy.predict(timeout=5)
 | 🔒 **[Environment Variables](https://docs.neuracore.com/env/)** | Securely configuring your Neuracore runtime context. |
 | 🤝 **[Contribution Guide](https://docs.neuracore.com/contribute/)** | Guidelines to help you contribute back to the open source project. |
 
+<br>
 
 ## 💻 Supported Models
 
