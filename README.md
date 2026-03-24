@@ -44,12 +44,12 @@ Request an [Enterprise Support](mailto:licensing@neuracore.com) for tailored sol
   <a href="https://discord.gg/DF5m8V6nbD"><img src="./docs/assets/social/logo-social-discord.png" width="2%" alt="Neuracore Discord"></a>
 </div>
 
-## ✨ Key Features
+## Key Features
 
-🚀 **Collect**: Streaming data logging with custom data types.
-📊 **Visualize**: Dataset visualization and synchronization.
-☁️ **Train**: Train robot learning algorithms on cloud.
-🤖 **Deploy**: Policy inference and deployment.
+- **Collect** — High-frequency streaming data logging with support for fully custom multi-modal data types.
+- **Visualize** — Real-time dataset visualization, playback, and precise synchronization via a unified dashboard.
+- **Train** — Frictionless deployment of state-of-the-art robot learning algorithms on scalable cloud GPU infrastructure.
+- **Deploy** — Seamless policy inference and low-latency execution engines built directly for production environments.
 
 <br>
 
@@ -140,7 +140,8 @@ neuracore predict --model "MyJob" --source "top_camera"
 
 <br>
 
-## 🍰 A Short Taste
+<details>
+<summary><b>🍰 A Short Taste</b></summary>
 
 Here is a brief glimpse into what Neuracore can do. For a detailed walk-through, please refer to our tutorials and comprehensive documentation.
 
@@ -193,6 +194,8 @@ nc.log_rgb(name="top_camera", rgb=image_array)
 # Model Inference
 predictions = policy.predict(timeout=5)
 ```
+
+</details>
 
 <br>
 
