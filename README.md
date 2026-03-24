@@ -4,10 +4,13 @@
 </p>
 
 <div align="center">
+    <a href="https://pypi.org/project/neuracore/"><img src="https://img.shields.io/pypi/v/neuracore?logo=pypi&logoColor=white" alt="PyPI - Version"></a>
+    <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python 3.10+"></a>
     <a href="https://pepy.tech/project/neuracore"><img src="https://static.pepy.tech/badge/neuracore" alt="Neuracore Downloads"></a>
+    <a href="https://github.com/NeuracoreAI/neuracore/commits/main"><img src="https://img.shields.io/github/last-commit/NeuracoreAI/neuracore" alt="Last Commit"></a>
     <a href="https://discord.gg/DF5m8V6nbD"><img alt="Neuracore Discord" src="https://img.shields.io/badge/Discord-Join%20Community-blue?logo=discord&logoColor=white"></a>
-    <a href="https://www.linkedin.com/company/neuracore/"><img alt="Neuracore LinkedIn" src="https://img.shields.io/badge/LinkedIn-Blue?style=flat&logo=linkedin&logoColor=white&label=LinkedIn&color=blue"></a>
     <a href="https://www.neuracore.com/try-on-colab"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Neuracore In Colab"></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </div>
 <br>
 
@@ -20,6 +23,47 @@ Request an [Enterprise Solution](mailto:licensing@neuracore.com) for tailored so
 <a href="https://www.neuracore.com/platform" target="_blank">
   <img width="100%" src="https://github.com/user-attachments/assets/5f6e9f12-185f-4050-9e71-2e5712d49b03" alt="Neuracore Data Synchronization">
 </a>
+
+<br>
+
+<div align="center">
+  <a href="https://github.com/NeuracoreAI"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="Neuracore GitHub"></a>
+  <a href="https://www.linkedin.com/company/neuracore/"><img src="https://img.shields.io/badge/LinkedIn-Blue?logo=linkedin&logoColor=white" alt="Neuracore LinkedIn"></a>
+  <a href="https://twitter.com/neuracore"><img src="https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white" alt="Neuracore Twitter"></a>
+  <a href="https://www.youtube.com/@neuracore"><img src="https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white" alt="Neuracore YouTube"></a>
+  <a href="https://discord.gg/DF5m8V6nbD"><img src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white" alt="Neuracore Discord"></a>
+</div>
+
+
+
+## 📄 Documentation
+
+See below for quickstart installation and usage examples. For comprehensive guidance on teleoperation, data logging, training, and deployment, refer to our full [Neuracore Docs](https://docs.neuracore.com/).
+
+<details open>
+<summary>Install</summary>
+
+Install the `neuracore` package in a [**Python>=3.10**](https://www.python.org/) environment.
+
+[![PyPI - Version](https://img.shields.io/pypi/v/neuracore?logo=pypi&logoColor=white)](https://pypi.org/project/neuracore/) [![Neuracore Downloads](https://static.pepy.tech/badge/neuracore)](https://pepy.tech/project/neuracore) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/neuracore?logo=python&logoColor=gold)](https://pypi.org/project/neuracore/)
+
+```bash
+# Basic installation for data logging
+pip install neuracore
+
+# Installation for ML and policy training
+pip install neuracore[ml]
+
+# Installation for bulk dataset imports (LeRobot, TFDS, etc.)
+pip install neuracore[import]
+```
+
+For alternative installation methods, including Docker and building from source, please consult the [Neuracore Quickstart Guide](https://docs.neuracore.com/quickstart/).
+
+</details>
+
+<details open>
+<summary>Usage</summary>
 
 ## 🌟 Key Features
 
@@ -155,16 +199,4 @@ Neuracore is available under two licenses:
 - **AGPL-3.0 License**: Open-source for non-commercial use.
 - **Enterprise License**: For commercial products and priority support. Contact [licensing@neuracore.com](mailto:licensing@neuracore.com).
 
-<br>
 
-<div>
-  <a href="https://github.com/NeuracoreAI"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="3%" alt="Neuracore GitHub"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://www.linkedin.com/company/neuracore/"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-linkedin.png" width="3%" alt="Neuracore LinkedIn"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://twitter.com/neuracore"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-twitter.png" width="3%" alt="Neuracore Twitter"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://www.youtube.com/@neuracore"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-youtube.png" width="3%" alt="Neuracore YouTube"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://discord.gg/DF5m8V6nbD"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="3%" alt="Neuracore Discord"></a>
-</div>
