@@ -46,13 +46,10 @@ Request an [Enterprise Support](mailto:licensing@neuracore.com) for tailored sol
 
 ## Key Features
 
-**Collect** — High-frequency streaming data logging with support for fully custom multi-modal data types.
-
-**Visualize** — Real-time dataset visualization, playback, and precise synchronization via a unified dashboard.
-
-**Train** — Frictionless deployment of state-of-the-art robot learning algorithms on scalable cloud GPU infrastructure.
-
-**Deploy** — Seamless policy inference and low-latency execution engines built directly for production environments.
+- **Collect** - High-frequency streaming data logging with support for fully custom multi-modal data types.
+- **Visualize** - Real-time dataset visualization, playback, and precise synchronization via a unified dashboard.
+- **Train** - Frictionless deployment of state-of-the-art robot learning algorithms on scalable cloud GPU infrastructure.
+- **Deploy** - Seamless policy inference and low-latency execution engines built directly for production environments.
 
 <br>
 
@@ -227,7 +224,7 @@ Neuracore supports state-of-the-art robot learning algorithms out of the box, op
 | **Diffusion Policy** | Energy-Based Diffusion | ✅ | 15-30 | Production |
 | **ACT** | Action Chunking Transformer | ✅ | 20-40 | Production |
 | **pi0** | Flow Matching (VLA) | ✅ | 25-50 | Beta |
-| **Custom Model** | Bring Your Own | ✅ | — | [Upload Yours →](https://docs.neuracore.com/custom-models/) |
+| **Custom Model** | Bring Your Own | ✅ | N/A | [Upload Yours →](https://docs.neuracore.com/custom-models/) |
 
 <br>
 
