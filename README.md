@@ -1,6 +1,6 @@
 <p>
   <a href="https://www.neuracore.com" target="_blank">
-    <img width="100%" src="./docs/assets/neuracore_logo.jpg" alt="Neuracore banner"></a>
+    <img width="100%" src="./docs/assets/Neuracore_banner.png" alt="Neuracore banner"></a>
 </p>
 
 <div align="center">
@@ -44,7 +44,7 @@ Request an [Enterprise Support](mailto:licensing@neuracore.com) for tailored sol
   <a href="https://discord.gg/DF5m8V6nbD"><img src="./docs/assets/social/logo-social-discord.png" width="2%" alt="Neuracore Discord"></a>
 </div>
 
-## Key Features
+## ✨ Key Features
 
 - **Collect** - High-frequency streaming data logging with support for fully custom multi-modal data types.
 - **Visualize** - Real-time dataset visualization, playback, and precise synchronization via a unified dashboard.
