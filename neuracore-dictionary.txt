@@ -337,3 +337,6 @@ fixturenames
 reraises
 pyav
 rawvideo
+TDMP
+VQ-BeT
+SOTA

@@ -4,7 +4,7 @@
       <img width="100%" src="./docs/assets/neuracore_logo.jpg" alt="Neuracore banner"></a>
   </p>
 
-[English](README.md) | [Chinese](docs/zh/README.md) | [Korean](docs/ko/README.md) | [Japanese](docs/ja/README.md) | [Russian](docs/ru/README.md) | [German](docs/de/README.md) | [French](docs/fr/README.md) | [Spanish](docs/es/README.md) | [Portuguese](docs/pt/README.md)
+
 
 <div align="center">
 
@@ -37,18 +37,22 @@
 
 </div>
 
-# 🤖 What is Neuracore
-✨ **Neuracore** is a powerful robot learning library that enables **data collection and visualization, model training, deployment, and real-time inference with support for custom data types.** Get started with Neuracore today, [sign up for a Neuracore account](https://www.neuracore.com/)!
-<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
-<img src="https://github.com/user-attachments/assets/5f6e9f12-185f-4050-9e71-2e5712d49b03" alt="Data Visualization" width="150%">
-</div>
+## 🤖 What is Neuracore?
 
-# 🌟 Features
+**Neuracore** is a high-performance **Robot Learning Infrastructure** designed for large-scale data collection, real-time visualization, and cloud-native training. Neuracore enables researchers and engineers to stream complex, high-frequency robotics data from physical hardware to the cloud with minimal overhead, providing a unified platform for training and deploying state-of-the-art (SOTA) robot policies.
 
-- 🚀 **Streaming data logging** with custom data types
-- 📊 **Dataset visualization** and synchronization
-- ☁️ Train **robot learning algorithms on cloud**
-- 🤖 **Policy inference** and deployment
+It is **fast**, **accurate**, and **easy to use**. Built for [Teleoperation](https://docs.neuracore.com/tasks/teleop/), [Data Logging](https://docs.neuracore.com/tasks/logging/), [Cloud Training](https://docs.neuracore.com/tasks/training/), and [Deployment](https://docs.neuracore.com/tasks/deployment/).
+
+<a href="https://www.neuracore.com/platform" target="_blank">
+  <img width="100%" src="https://github.com/user-attachments/assets/5f6e9f12-185f-4050-9e71-2e5712d49b03" alt="Neuracore Data Synchronization">
+</a>
+
+## 🌟 Key Features
+
+- 🚀 **High-Frequency Streaming**: Use the **Data Daemon** to log multi-modal sensor data (joint poses, RGB-D, force) at high frequencies.
+- 📊 **Real-Time Visualization**: Synchronize and visualize complex datasets in real-time through the Neuracore dashboard.
+- ☁️ **Cloud-Native Training**: Launch training runs for **Diffusion Policy**, **ACT**, and more directly on scalable cloud infrastructure.
+- 🤖 **Edge Deployment**: Deploy trained policies with optimized inference engines for low-latency robot control.
 
 
 # 🛠️ Installation
