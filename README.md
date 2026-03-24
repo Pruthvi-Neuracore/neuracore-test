@@ -155,6 +155,18 @@ We are building Neuracore to help everyone accelerate their robot learning workf
 - [Discord](https://discord.gg/DF5m8V6nbD) - Chat with the community and get support
 - [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues) - Report bugs and request features
 
+## 🧩 Integrations
+
+Neuracore integrates seamlessly with leading robotics simulators and machine learning platforms.
+
+<a href="https://docs.neuracore.com/integrations/" target="_blank">
+  <img width="100%" src="https://github.com/NeuracoreAI/neuracore/raw/main/docs/assets/integrations_banner.png" alt="Neuracore integrations banner">
+</a>
+
+| Simulators | Frameworks | ML Platforms |
+| :---: | :---: | :---: |
+| Mujoco, PyBullet, Isaac Gym | ROS1/ROS2, LeRobot, Bigym | Hugging Face, W&B, CometML |
+
 # 🧾 Citation
 
 If you use Neuracore in your research, please consider citing:
