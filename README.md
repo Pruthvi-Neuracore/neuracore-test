@@ -3,15 +3,15 @@
     <img width="100%" src="./docs/assets/neuracore_logo.jpg" alt="Neuracore banner"></a>
 </p>
 
-<div>
+<div align="center">
     <a href="https://pepy.tech/project/neuracore"><img src="https://static.pepy.tech/badge/neuracore" alt="Neuracore Downloads"></a>
-    <a href="https://discord.gg/DF5m8V6nbD"><img alt="Neuracore Discord" src="https://img.shields.io/discord/1462855035695267861?logo=discord&logoColor=white&label=Discord&color=blue"></a>
+    <a href="https://discord.gg/DF5m8V6nbD"><img alt="Neuracore Discord" src="https://img.shields.io/badge/Discord-Join%20Community-blue?logo=discord&logoColor=white"></a>
     <a href="https://www.linkedin.com/company/neuracore/"><img alt="Neuracore LinkedIn" src="https://img.shields.io/badge/LinkedIn-Blue?style=flat&logo=linkedin&logoColor=white&label=LinkedIn&color=blue"></a>
     <a href="https://www.neuracore.com/try-on-colab"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Neuracore In Colab"></a>
 </div>
 <br>
 
-[Neuracore](https://www.neuracore.com/)provides a **unified platform** for the entire lifecycle of Physical and Embodied AI. Built on years of foundational research. Neuracore is **fast**, **accurate**, and **scalable**. Constantly updated for performance and flexibility, our platform excels at high-frequency synchronized data logging, real-time visualization, cloud-native policy training, and low-latency edge deployment.
+[Neuracore](https://www.neuracore.com/) provides a **unified platform** for the entire lifecycle of Physical and Embodied AI. Built on years of foundational research. Neuracore is **fast**, **accurate**, and **scalable**. Constantly updated for performance and flexibility, our platform excels at high-frequency synchronized data logging, real-time visualization, cloud-native policy training, and low-latency edge deployment.
 
 Find detailed documentation in the [Neuracore Docs](https://docs.neuracore.com/). Get support via [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues). Join discussions on [Discord](https://discord.gg/DF5m8V6nbD)
 
