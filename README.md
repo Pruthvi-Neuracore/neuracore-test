@@ -49,14 +49,14 @@ Request an [Enterprise License](mailto:licensing@neuracore.com) for tailored sol
 
 
 
-## � Documentation
+## 📄 Documentation
 
 See below for quickstart installation and usage examples. For comprehensive guidance on teleoperation, data logging, training, and deployment, refer to our full [Neuracore Docs](https://docs.neuracore.com/).
 
 <details open>
-<summary>🛠️ Installation</summary>
+<summary><b>Install</b></summary>
 
-Install the `neuracore` package in a [**Python>=3.10**](https://www.python.org/) environment.
+Install the `neuracore` package including all requirements in a [**Python>=3.10**](https://www.python.org/) environment.
 
 [![PyPI - Version](https://img.shields.io/pypi/v/neuracore?logo=pypi&logoColor=white)](https://pypi.org/project/neuracore/) [![Neuracore Downloads](https://static.pepy.tech/badge/neuracore)](https://pepy.tech/project/neuracore) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/neuracore?logo=python&logoColor=gold)](https://pypi.org/project/neuracore/)
 
@@ -78,14 +78,14 @@ pip install neuracore[import]
 pip install neuracore[examples]
 ```
 
-For alternative environments (Conda, Docker), consult the [Neuracore Quickstart Guide](https://docs.neuracore.com/quickstart/).
+For alternative environments consult the [Neuracore Quickstart Guide](https://docs.neuracore.com/quickstart/).
 
 </details>
 
 <details open>
-<summary>🚀 Usage</summary>
+<summary>Usage</summary>
 
-### 🐍 Python API
+### 🐍 Python
 
 Collect multi-modal data and deploy trained policies in minutes.
 
@@ -110,23 +110,52 @@ action = policy.predict()
 
 ### 💻 CLI
 
-Control the background **Data Daemon** and manage cloud training runs.
+The Neuracore CLI allows you to manage datasets, hardware, and cloud training directly from your terminal. This is the fastest way to verify your system and trigger cloud-based AI jobs.
+
+**1. Account & Connection**
+
+Before streaming data, authenticate your machine and verify your robot's hardware connection.
 
 ```bash
-# Start the background data streaming worker
-nc-data-daemon start
+# Login to your Neuracore account
+neuracore login
 
-# Stop the background worker
-nc-data-daemon stop
+# Launch the background data pipeline (required for all tasks)
+nc-data-daemon launch
 
-# List active cloud training jobs
-neuracore training list --cloud
+# Check hardware status and fix CAN-bus bitrate
+neuracore hardware --check-bus can0 --fix
+```
 
-# Monitor a specific training run
-neuracore training status --name MyTrainingJob
+**2. Data Collection Workflow**
+
+```bash
+# Connect a robot with a URDF model
+neuracore connect --name "MyRobot" --urdf "/path/to/robot.urdf"
+
+# Create a new dataset on the cloud
+neuracore datasets create --name "My Robot Dataset" --desc "Example task"
+
+# Start/Stop recording sessions
+neuracore record start
+neuracore record stop
+```
+
+**3. Cloud Training & Inference**
+
+```bash
+# Kick off a Diffusion Policy training run on cloud GPUs
+neuracore train start --name "MyTrainingJob" --dataset "My Robot Dataset" --algo "diffusion_policy" --gpus 5
+
+# Check training progress
+neuracore train status --id "MyTrainingJob"
+
+# Run a trained model on a live camera source
+neuracore predict --model "MyTrainingJob" --source "top_camera"
 ```
 
 </details>
+
 
 ## ✨ Supported Models
 
