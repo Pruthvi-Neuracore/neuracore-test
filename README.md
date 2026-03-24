@@ -23,7 +23,7 @@ Find comprehensive guides in the [Neuracore Docs](https://docs.neuracore.com/), 
 Request an [Enterprise Support](mailto:licensing@neuracore.com) for tailored solutions and commercial deployment.
 
 <a href="https://www.neuracore.com/platform" target="_blank">
-  <img width="100%" src="https://github.com/user-attachments/assets/5f6e9f12-185f-4050-9e71-2e5712d49b03" alt="Neuracore Data Synchronization">
+  <img width="100%" src="./docs/assets/social/moat.gif" alt="Neuracore Data Synchronization">
 </a>
 
 **have a better image that shows data synchronization**
@@ -231,11 +231,15 @@ Neuracore supports state-of-the-art robot learning algorithms out of the box, op
 
 Neuracore integrates seamlessly with leading robotics simulators and machine learning platforms.
 
+** have logos or flow framework that looks better **
+
 <br>
 
 | Simulators | Frameworks | ML Platforms |
 | :---: | :---: | :---: |
 | Mujoco, PyBullet, Isaac Gym | ROS1/ROS2, LeRobot, Bigym | Hugging Face, W&B, CometML |
+
+<br>
 
 # 📑 Citation
 
