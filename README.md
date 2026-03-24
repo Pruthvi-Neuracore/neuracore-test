@@ -27,11 +27,15 @@ Request an [Enterprise Solution](mailto:licensing@neuracore.com) for tailored so
 <br>
 
 <div align="center">
-  <a href="https://github.com/NeuracoreAI"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="Neuracore GitHub"></a>
-  <a href="https://www.linkedin.com/company/neuracore/"><img src="https://img.shields.io/badge/LinkedIn-Blue?logo=linkedin&logoColor=white" alt="Neuracore LinkedIn"></a>
-  <a href="https://twitter.com/neuracore"><img src="https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white" alt="Neuracore Twitter"></a>
-  <a href="https://www.youtube.com/@neuracore"><img src="https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white" alt="Neuracore YouTube"></a>
-  <a href="https://discord.gg/DF5m8V6nbD"><img src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white" alt="Neuracore Discord"></a>
+  <a href="https://github.com/NeuracoreAI"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="2%" alt="Neuracore GitHub"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://www.linkedin.com/company/neuracore/"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-linkedin.png" width="2%" alt="Neuracore LinkedIn"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://twitter.com/neuracore"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-twitter.png" width="2%" alt="Neuracore Twitter"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://www.youtube.com/@neuracore"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-youtube.png" width="2%" alt="Neuracore YouTube"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://discord.gg/DF5m8V6nbD"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="2%" alt="Neuracore Discord"></a>
 </div>
 
 
