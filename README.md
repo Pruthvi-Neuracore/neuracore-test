@@ -16,9 +16,10 @@
 
 [Neuracore](https://www.neuracore.com/) provides a **unified platform** for the entire lifecycle of Physical and Embodied AI. Built on years of foundational research. Neuracore is **fast**, **accurate**, and **scalable**. Constantly updated for performance and flexibility, our platform excels at high-frequency synchronized data logging, real-time visualization, cloud-native policy training, and low-latency edge deployment.
 
-**Try Neuracore now:** [Sign up for a free account](https://www.neuracore.com/) and start training your robots in minutes. Find comprehensive guides in the [Neuracore Docs](https://docs.neuracore.com/), get support via [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues), and join the conversation on [Discord](https://discord.gg/DF5m8V6nbD).
-
-Request an [Enterprise License](mailto:licensing@neuracore.com) for tailored solutions and commercial deployment.
+- 🚀 **Try Neuracore now**: [Sign up for a free account](https://www.neuracore.com/) and start training your robots in minutes.
+- 📚 **Explore the Platform**: Find comprehensive guides in the [Neuracore Docs](https://docs.neuracore.com/).
+- 💬 **Get Support**: Open [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues) or join the conversation on [Discord](https://discord.gg/DF5m8V6nbD).
+- 🏢 **Enterprise Ready**: Request an [Enterprise License](mailto:licensing@neuracore.com) for tailored solutions and commercial deployment.
 
 <a href="https://www.neuracore.com/platform" target="_blank">
   <img width="100%" src="https://github.com/user-attachments/assets/5f6e9f12-185f-4050-9e71-2e5712d49b03" alt="Neuracore Data Synchronization">
@@ -27,15 +28,15 @@ Request an [Enterprise License](mailto:licensing@neuracore.com) for tailored sol
 <br>
 
 <div align="center">
-  <a href="https://github.com/NeuracoreAI"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="2%" alt="Neuracore GitHub"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://www.linkedin.com/company/neuracore/"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-linkedin.png" width="2%" alt="Neuracore LinkedIn"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://twitter.com/neuracore"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-twitter.png" width="2%" alt="Neuracore Twitter"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://www.youtube.com/@neuracore"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-youtube.png" width="2%" alt="Neuracore YouTube"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://discord.gg/DF5m8V6nbD"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="2%" alt="Neuracore Discord"></a>
+  <a href="https://github.com/NeuracoreAI"><img src="./docs/assets/social/logo-social-github.png" width="2%" alt="Neuracore GitHub"></a>
+  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://www.linkedin.com/company/neuracore/"><img src="./docs/assets/social/logo-social-linkedin.png" width="2%" alt="Neuracore LinkedIn"></a>
+  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://twitter.com/neuracore"><img src="./docs/assets/social/logo-social-twitter.png" width="2%" alt="Neuracore Twitter"></a>
+  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://www.youtube.com/@neuracore"><img src="./docs/assets/social/logo-social-youtube.png" width="2%" alt="Neuracore YouTube"></a>
+  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://discord.gg/DF5m8V6nbD"><img src="./docs/assets/social/logo-social-discord.png" width="2%" alt="Neuracore Discord"></a>
 </div>
 
 
