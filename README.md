@@ -26,12 +26,7 @@ Request an [Enterprise License](mailto:licensing@neuracore.com) for tailored sol
   <img width="100%" src="https://github.com/user-attachments/assets/5f6e9f12-185f-4050-9e71-2e5712d49b03" alt="Neuracore Data Synchronization">
 </a>
 
-## 🌟 Key Features
 
-- 🚀 **Collect**: Stream high-frequency joints, RGB-D, and multi-modal sensor data with the background **Data Daemon**.
-- 📊 **Visualize**: Synchronize and monitor complex robotic datasets in real-time through a unified dashboard.
-- ☁️ **Train**: Launch state-of-the-art policy training (**Diffusion Policy**, **ACT**) on scalable cloud infrastructure.
-- 🤖 **Deploy**: Execute low-latency robot control with optimized inference engines for production environments.
 
 <br>
 
@@ -47,13 +42,12 @@ Request an [Enterprise License](mailto:licensing@neuracore.com) for tailored sol
   <a href="https://discord.gg/DF5m8V6nbD"><img src="./docs/assets/social/logo-social-discord.png" width="2%" alt="Neuracore Discord"></a>
 </div>
 
-## 🌟 Key Features
+## ✨ Key Features
 
-🚀 Streaming data logging with custom data types
-📊 Dataset visualization and synchronization
-☁️ Train robot learning algorithms on cloud
-🤖 Policy inference and deployment
-
+🚀 **Collect**: Streaming data logging with custom data types
+📊 **Visualize**: Dataset visualization and synchronization
+☁️ **Train**: Train robot learning algorithms on cloud
+🤖 **Deploy**: Policy inference and deployment
 
 <br>
 
@@ -190,3 +184,23 @@ If you use Neuracore in your research, please consider citing:
 Neuracore is available under two licenses:
 - **AGPL-3.0 License**: Open-source for non-commercial use.
 - **Enterprise License**: For commercial products and priority support. Contact [licensing@neuracore.com](mailto:licensing@neuracore.com).
+
+<br>
+
+## 📞 Contact
+
+For bug reports and feature requests related to Neuracore software, please visit [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues). For questions, discussions, and community support, join our active community on [Discord](https://discord.gg/DF5m8V6nbD). We're here to help with all things Neuracore!
+
+<br>
+
+<div align="center">
+  <a href="https://github.com/NeuracoreAI"><img src="./docs/assets/social/logo-social-github.png" width="2%" alt="Neuracore GitHub"></a>
+  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://linkedin.com/company/neuracoreai/"><img src="./docs/assets/social/logo-social-linkedin.png" width="2%" alt="Neuracore LinkedIn"></a>
+  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://x.com/Neuracore_AI"><img src="./docs/assets/social/logo-social-twitter.png" width="2%" alt="Neuracore Twitter"></a>
+  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://www.youtube.com/@neuracoreai"><img src="./docs/assets/social/logo-social-youtube.png" width="2%" alt="Neuracore YouTube"></a>
+  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
+  <a href="https://discord.gg/DF5m8V6nbD"><img src="./docs/assets/social/logo-social-discord.png" width="2%" alt="Neuracore Discord"></a>
+</div>
