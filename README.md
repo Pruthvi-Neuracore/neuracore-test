@@ -14,7 +14,7 @@
 </div>
 <br>
 
-[Neuracore](https://www.neuracore.com/) provides a **unified platform** for the entire lifecycle of Physical and Embodied AI. Built on years of foundational research. Neuracore is **fast**, **accurate**, and **scalable**. Constantly updated for performance and flexibility, our platform excels at high-frequency synchronized data logging, real-time visualization, cloud-native policy training, and low-latency edge deployment.
+[Neuracore](https://www.neuracore.com/) is the unified platform for Physical and Embodied AI. We provide blazing-fast, scalable infrastructure to collect multi-modal data, visualize real-time streams, train cloud-native policies, and deploy them to edge devices.
 
 **Try Neuracore now:** [Sign up for a free account](https://www.neuracore.com/) and start training your robots in minutes. 
 
@@ -116,7 +116,7 @@ action = policy.predict()
 
 ### CLI
 
-The Neuracore CLI allows you to manage datasets, hardware, and cloud training directly from your terminal. This is the fastest way to verify your system and trigger cloud-based AI jobs.
+Manage datasets, hardware, and cloud training directly from your terminal. The CLI is the fastest way to verify your system and trigger cloud-based AI jobs.
 
 ```bash
 # 1. Launch the background data pipeline (required for all streaming tasks)
@@ -197,15 +197,15 @@ predictions = policy.predict(timeout=5)
 
 </details>
 
-| Quick Links | Description |
-| :-- | :-- |
-| 🚀 **[Tutorials](https://docs.neuracore.com/tutorials/)** & **[Examples](https://docs.neuracore.com/examples/)** | Step-by-step guides for teleoperation and end-to-end setups. |
-| ☁️ **[Training](https://docs.neuracore.com/training/)** | How to kick off cloud training runs and evaluate policies. |
-| 💻 **[Command Line Tools](https://docs.neuracore.com/cli/)** | Full command reference for the `neuracore` CLI. |
-| ⚙️ **[Data Daemon](https://docs.neuracore.com/daemon/)** | Managing the background data streaming pipeline. |
-| 📥 **[Dataset Importer](https://docs.neuracore.com/importer/)** | Formatting custom datasets and migrating from external sources. |
-| 🔒 **[Environment Variables](https://docs.neuracore.com/env/)** | Securely configuring your Neuracore runtime context. |
-| 🤝 **[Contribution Guide](https://docs.neuracore.com/contribute/)** | Guidelines to help you contribute back to the open source project. |
+| Type | Links | Description |
+| :-- | :-- | :-- |
+| **Tutorials** | **[Tutorials](https://docs.neuracore.com/tutorials/)** & **[Examples](https://docs.neuracore.com/examples/)** | Step-by-step guides for teleoperation and end-to-end setups. |
+| **How-To Guides** | **[Training](https://docs.neuracore.com/training/)** | How to kick off cloud training runs and evaluate policies. |
+| **How-To Guides** | **[Dataset Importer](https://docs.neuracore.com/importer/)** | Formatting custom datasets and migrating from external sources. |
+| **Explanation** | **[Data Daemon](https://docs.neuracore.com/daemon/)** | Managing the background data streaming pipeline. |
+| **Reference** | **[Command Line Tools](https://docs.neuracore.com/cli/)** | Full command reference for the `neuracore` CLI. |
+| **Reference** | **[Environment Variables](https://docs.neuracore.com/env/)** | Securely configuring your Neuracore runtime context. |
+| **Explanation** | **[Contribution Guide](https://docs.neuracore.com/contribute/)** | Guidelines to help you contribute back to the open source project. |
 
 <br>
 
