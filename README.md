@@ -21,13 +21,6 @@
 
 **An open-source framework for Physical and Embodied AI.** Stream, log, train, and deploy robot learning policies directly from Python.
 
-<div align="center">
-    <a href="https://www.neuracore.com/try-on-colab"><img src="https://img.shields.io/badge/Google_Colab-Try_Now-F9AB00?style=flat-square&logo=googlecolab&logoColor=white" alt="Open Neuracore In Colab"></a>
-    <a href="https://discord.gg/DF5m8V6nbD"><img alt="Neuracore Discord" src="https://img.shields.io/badge/Community-Join_Discord-7289DA?style=flat-square&logo=discord&logoColor=white"></a>
-    <a href="https://docs.neuracore.com/"><img alt="Neuracore Docs" src="https://img.shields.io/badge/Documentation-Read_Docs-blue?style=flat-square&logo=readthedocs"></a>
-    <a href="https://pypi.org/project/neuracore/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-neuracore-blue?style=flat-square&logo=pypi&logoColor=white"></a>
-</div>
-
 <br>
 
 **have a better image that shows data synchronization**
@@ -58,7 +51,7 @@ Neuracore eliminates the need to manually string together ROS bags, local data v
 - **Train** - Frictionless deployment of state-of-the-art robot learning algorithms on scalable cloud GPU infrastructure.
 - **Deploy** - Seamless policy inference and low-latency execution engines built directly for production environments.
 
-## 📥 Installation
+## 📥 Install
 
 Install the `neuracore` package in a **Python>=3.10** environment.
 
@@ -75,7 +68,7 @@ pip install neuracore[examples]
 
 > **Note:** Installing the `ffmpeg` binary (`sudo apt-get install -y ffmpeg`) is heavily recommended for faster video encoding during recording.
 
-## 🍰 Full Example
+## 🍰 A Short Taste
 
 Here is an end-to-end glimpse of what an entire Neuracore pipeline looks like in a single script.
 
@@ -129,7 +122,7 @@ nc.log_rgb(name="top_camera", rgb=image_array)
 predictions = policy.predict(timeout=5)
 ```
 
-## 💻 Supported Algorithms
+## 💻 Supported Models
 
 Neuracore supports state-of-the-art robot learning algorithms out of the box. You can also **[upload your own custom algorithms](https://docs.neuracore.com/custom-models/)** directly using our flexible plugin interface.
 
@@ -141,7 +134,7 @@ Neuracore supports state-of-the-art robot learning algorithms out of the box. Yo
 | **Flow Matching (pi0)** | ✅ | 25-50 | Beta |
 | **Bring Your Own (Custom Model)** | ✅ | N/A | [Upload Yours →](https://docs.neuracore.com/custom-models/) |
 
-## 📖 Documentation
+## 📄 Documentation
 
 For comprehensive references and deep-dives, see our main documentation hub:
 - **[Tutorials & Examples](https://docs.neuracore.com/tutorials/)** - Step-by-step guides for teleoperation setups.
@@ -149,7 +142,7 @@ For comprehensive references and deep-dives, see our main documentation hub:
 - **[Command Line Tools](https://docs.neuracore.com/cli/)** - Full `neuracore` CLI commands.
 - **[Data Daemon](https://docs.neuracore.com/daemon/)** - Manage the background stream.
 
-## � Community
+## 👥 Community
 
 We are building Neuracore to help everyone accelerate their robot learning workflows, and we'd love to hear from you! Join our community to get help, share ideas, and stay updated:
 
