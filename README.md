@@ -1,39 +1,45 @@
-<p>
-  <a href="https://www.neuracore.com" target="_blank">
-    <img width="100%" src="./docs/assets/Neuracore_banner.png" alt="Neuracore banner"></a>
-</p>
-
 <div align="center">
-    <a href="https://pypi.org/project/neuracore/"><img src="https://img.shields.io/pypi/v/neuracore?logo=pypi&logoColor=white" alt="PyPI - Version"></a>
-    <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python 3.10+"></a>
-    <a href="https://pepy.tech/project/neuracore"><img src="https://static.pepy.tech/badge/neuracore" alt="Neuracore Downloads"></a>
-    <a href="https://github.com/NeuracoreAI/neuracore/commits/main"><img src="https://img.shields.io/github/last-commit/NeuracoreAI/neuracore" alt="Last Commit"></a>
-    <a href="https://discord.gg/DF5m8V6nbD"><img alt="Neuracore Discord" src="https://img.shields.io/badge/Discord-Join%20Community-blue?logo=discord&logoColor=white"></a>
-    <a href="https://www.neuracore.com/try-on-colab"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Neuracore In Colab"></a>
-    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <a href="https://www.neuracore.com" target="_blank">
+    <img width="80%" src="./docs/assets/Neuracore_banner.png" alt="Neuracore banner"></a>
 </div>
+
 <br>
 
-Neuracore is an open-source framework for Physical and Embodied AI. It allows you to collect high-frequency data, visualize it in real-time, train cloud-native policies, and deploy them to edge devices directly from Python.
+<div align="center">
+  <h1>Neuracore</h1>
+</div>
 
-**[Join the Discord Community](https://discord.gg/DF5m8V6nbD)** | **[Try Neuracore in Colab](https://www.neuracore.com/try-on-colab)** | **[Read the Docs](https://docs.neuracore.com/)**
+**An open-source framework for Physical and Embodied AI.** Stream, log, train, and deploy robot learning policies directly from Python.
 
-**have a better image that shows data synchronization**
+<div align="center">
+    <a href="https://www.neuracore.com/try-on-colab"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Neuracore In Colab" height="28"></a>
+    <a href="https://discord.gg/DF5m8V6nbD"><img alt="Neuracore Discord" src="https://img.shields.io/badge/Discord-Join%20Community-7289DA?style=for-the-badge&logo=discord&logoColor=white" height="28"></a>
+    <a href="https://docs.neuracore.com/"><img alt="Neuracore Docs" src="https://img.shields.io/badge/Documentation-Read_Docs-blue?style=for-the-badge&logo=readthedocs" height="28"></a>
+    <a href="https://pypi.org/project/neuracore/"><img alt="PyPI" src="https://img.shields.io/pypi/v/neuracore?style=for-the-badge&logo=pypi&logoColor=white" height="28"></a>
+</div>
 
-## ✨ Key Features
+---
 
-- **Collect** - High-frequency streaming data logging with support for fully custom multi-modal data types.
-- **Visualize** - Real-time dataset visualization, playback, and precise synchronization via a unified dashboard.
-- **Train** - Frictionless deployment of state-of-the-art robot learning algorithms on scalable cloud GPU infrastructure.
-- **Deploy** - Seamless policy inference and low-latency execution engines built directly for production environments.
+## 🚀 Quick Start
 
-## � Install
+```python
+import neuracore as nc
 
-Install the `neuracore` package including all requirements in a **Python>=3.10** environment.
+nc.login()
+nc.connect_robot(robot_name="MyRobot", urdf_path="/path/to/robot.urdf")
+nc.start_recording()
+# ...stream sensory data...
+policy = nc.policy(train_run_name="MyTrainingJob")
+action = policy.predict()
+```
 
-> **Note:** Installing the `ffmpeg` binary is recommended for faster video encoding during recording and decoding during playback/import. If unavailable, Neuracore falls back to PyAV automatically.
->
-> **Linux (Debian/Ubuntu):** `sudo apt-get update && sudo apt-get install -y ffmpeg`
+## 🧠 What This Does
+
+Neuracore eliminates the need to manually string together ROS bags, local data visualizers, and complex cloud GPU scripts. It provides a cohesive Python library to collect and synchronize high-frequency multi-modal data directly from your robots. Behind the scenes, Neuracore automatically uploads your datasets and scales state-of-the-art imitation learning algorithms on cloud GPUs, letting you seamlessly pull down trained policies for local, low-latency execution.
+
+## 📥 Installation
+
+Install the `neuracore` package in a **Python>=3.10** environment.
 
 ```bash
 # Basic installation for data logging and visualization
@@ -42,62 +48,13 @@ pip install neuracore
 # For training and ML development
 pip install neuracore[ml]
 
-# For bulk importing datasets 
-pip install neuracore[import]
-
 # To run our example scripts
 pip install neuracore[examples]
 ```
 
-## 💻 Usage
+> **Note:** Installing the `ffmpeg` binary (`sudo apt-get install -y ffmpeg`) is heavily recommended for faster video encoding during recording.
 
-### Python
-
-Collect multi-modal data and deploy trained policies in minutes.
-
-```python
-import neuracore as nc
-
-# Authenticate and register your robot
-nc.login()
-nc.connect_robot(robot_name="MyRobot", urdf_path="/path/to/robot.urdf")
-
-# Stream and log high-frequency sensor data
-nc.start_recording()
-nc.log_joint_positions(positions={'j1': 0.1, 'j2': -0.3})
-nc.log_rgb(name="wrist_cam", rgb=image_array)
-nc.log_depth(name="wrist_cam", depth=depth_array)
-nc.stop_recording()
-
-# Deploy a trained policy for real-time inference
-policy = nc.policy(train_run_name="MyTrainingJob")
-action = policy.predict()
-```
-
-### CLI
-
-Manage datasets, hardware, and cloud training directly from your terminal.
-
-```bash
-# 1. Launch the background data pipeline (required for all streaming tasks)
-nc-data-daemon launch
-
-# 2. Connect a robot via URDF and create a new dataset
-neuracore connect --name "MyRobot" --urdf "/path/to/robot.urdf"
-neuracore datasets create --name "My Robot Dataset"
-
-# 3. Start/Stop recording data streams
-neuracore record start
-neuracore record stop
-
-# 4. Kick off a Diffusion Policy training run on 5 cloud GPUs
-neuracore train start --name "MyJob" --dataset "My Robot Dataset" --algo "diffusion_policy" --gpus 5
-
-# 5. Run a trained model on a live camera source
-neuracore predict --model "MyJob" --source "top_camera"
-```
-
-## 🍰 A Short Taste
+## 🍰 Full Example
 
 Here is an end-to-end glimpse of what an entire Neuracore pipeline looks like in a single script.
 
@@ -151,21 +108,9 @@ nc.log_rgb(name="top_camera", rgb=image_array)
 predictions = policy.predict(timeout=5)
 ```
 
-## 📖 Quick Links
+## � Supported Algorithms
 
-| Type | Links | Description |
-| :-- | :-- | :-- |
-| **Tutorials** | **[Tutorials](https://docs.neuracore.com/tutorials/)** & **[Examples](https://docs.neuracore.com/examples/)** | Step-by-step guides for teleoperation and end-to-end setups. |
-| **How-To Guides** | **[Training](https://docs.neuracore.com/training/)** | How to kick off cloud training runs and evaluate policies. |
-| **How-To Guides** | **[Dataset Importer](https://docs.neuracore.com/importer/)** | Formatting custom datasets and migrating from external sources. |
-| **Explanation** | **[Data Daemon](https://docs.neuracore.com/daemon/)** | Managing the background data streaming pipeline. |
-| **Reference** | **[Command Line Tools](https://docs.neuracore.com/cli/)** | Full command reference for the `neuracore` CLI. |
-| **Reference** | **[Environment Variables](https://docs.neuracore.com/env/)** | Securely configuring your Neuracore runtime context. |
-| **Explanation** | **[Contribution Guide](https://docs.neuracore.com/contribute/)** | Guidelines to help you contribute back to the open source project. |
-
-## 💻 Supported Models
-
-Neuracore supports state-of-the-art robot learning algorithms out of the box, optimized for throughput and stability. You can also **[upload your own custom algorithms](https://docs.neuracore.com/custom-models/)** directly using our flexible plugin interface.
+Neuracore supports state-of-the-art robot learning algorithms out of the box. You can also **[upload your own custom algorithms](https://docs.neuracore.com/custom-models/)** directly using our flexible plugin interface.
 
 | Algorithm | Cloud Training | Inference Speed (ms) | Status |
 | :--- | :---: | :---: | :---: |
@@ -175,26 +120,22 @@ Neuracore supports state-of-the-art robot learning algorithms out of the box, op
 | **Flow Matching (pi0)** | ✅ | 25-50 | Beta |
 | **Bring Your Own (Custom Model)** | ✅ | N/A | [Upload Yours →](https://docs.neuracore.com/custom-models/) |
 
-## 📑 Citation
+## � Documentation
 
-If Neuracore accelerates your robotics research or product development, we kindly ask that you cite our framework:
+For comprehensive references and deep-dives, see our main documentation hub:
+- **[Tutorials & Examples](https://docs.neuracore.com/tutorials/)** - Step-by-step guides for teleoperation setups.
+- **[Dataset Importer](https://docs.neuracore.com/importer/)** - Format and migrate external data.
+- **[Command Line Tools](https://docs.neuracore.com/cli/)** - Full `neuracore` CLI commands.
+- **[Data Daemon](https://docs.neuracore.com/daemon/)** - Manage the background stream.
 
-```bibtex
-@software{Neuracore,
-  author = {Neuracore Team},
-  title = {Neuracore},
-  month = {January},
-  year = {2026},
-  url = {https://github.com/NeuracoreAI/neuracore}
-}
-```
+## 👥 Community
+
+We are building Neuracore to help everyone accelerate their robot learning workflows, and we'd love to hear from you! Join our community to get help, share ideas, and stay updated:
+
+- **[Discord](https://discord.gg/DF5m8V6nbD)** - Chat with the community and get support.
+- **[GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues)** - Report bugs and request features.
+- **[Contribution Guide](https://docs.neuracore.com/contribute/)** - Help build the future of OSS robotics.
 
 ## 📜 License
 
 Neuracore is available under the **[MIT License](https://github.com/NeuracoreAI/neuracore/blob/main/LICENSE)**.
-
-See the [`LICENSE.md`](https://github.com/NeuracoreAI/neuracore/blob/main/LICENSE) file for the complete terms and conditions regarding distribution, modification, and commercial use.
-
-## 📞 Contact
-
-For bug reports and feature requests related to Neuracore software, please visit [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues). For questions, discussions, and community support, join our active community on [Discord](https://discord.gg/DF5m8V6nbD). We're here to help with all things open-source robotics!
