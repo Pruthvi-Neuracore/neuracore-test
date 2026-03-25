@@ -14,35 +14,11 @@
 </div>
 <br>
 
-[Neuracore](https://www.neuracore.com/) is the unified platform for Physical and Embodied AI. We provide blazing-fast, scalable infrastructure to collect multi-modal data, visualize real-time streams, train cloud-native policies, and deploy them to edge devices.
+Neuracore is an open-source framework for Physical and Embodied AI. It allows you to collect high-frequency data, visualize it in real-time, train cloud-native policies, and deploy them to edge devices directly from Python.
 
-**Try Neuracore now:** [Sign up for a free account](https://www.neuracore.com/) and start training your robots in minutes. 
-
-Find comprehensive guides in the [Neuracore Docs](https://docs.neuracore.com/), get support via [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues), and join the conversation on [Discord](https://discord.gg/DF5m8V6nbD).
-
-Request an [Enterprise Support](mailto:licensing@neuracore.com) for tailored solutions and commercial deployment.
-
-<a href="https://www.neuracore.com/platform" target="_blank">
-  <img width="100%" src="./docs/assets/social/moat.gif" alt="Neuracore Data Synchronization">
-</a>
+**[Join the Discord Community](https://discord.gg/DF5m8V6nbD)** | **[Try Neuracore in Colab](https://www.neuracore.com/try-on-colab)** | **[Read the Docs](https://docs.neuracore.com/)**
 
 **have a better image that shows data synchronization**
-
-
-
-<br>
-
-<div align="center">
-  <a href="https://github.com/NeuracoreAI"><img src="./docs/assets/social/logo-social-github.png" width="2%" alt="Neuracore GitHub"></a>
-  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://linkedin.com/company/neuracoreai/"><img src="./docs/assets/social/logo-social-linkedin.png" width="2%" alt="Neuracore LinkedIn"></a>
-  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://x.com/Neuracore_AI"><img src="./docs/assets/social/logo-social-twitter.png" width="2%" alt="Neuracore Twitter"></a>
-  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://www.youtube.com/@neuracoreai"><img src="./docs/assets/social/logo-social-youtube.png" width="2%" alt="Neuracore YouTube"></a>
-  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://discord.gg/DF5m8V6nbD"><img src="./docs/assets/social/logo-social-discord.png" width="2%" alt="Neuracore Discord"></a>
-</div>
 
 ## ✨ Key Features
 
@@ -51,20 +27,9 @@ Request an [Enterprise Support](mailto:licensing@neuracore.com) for tailored sol
 - **Train** - Frictionless deployment of state-of-the-art robot learning algorithms on scalable cloud GPU infrastructure.
 - **Deploy** - Seamless policy inference and low-latency execution engines built directly for production environments.
 
-<br>
+## � Install
 
-
-## 📄 Documentation
-
-See below for quickstart installation and usage examples. For comprehensive guidance, refer to our full [Neuracore Docs](https://docs.neuracore.com/), or jump straight to a specific topic:
-
-
-<details open>
-<summary>Install</summary>
-
-Install the `neuracore` package including all requirements in a [**Python>=3.10**](https://www.python.org/) environment.
-
-[![PyPI - Version](https://img.shields.io/pypi/v/neuracore?logo=pypi&logoColor=white)](https://pypi.org/project/neuracore/) [![Neuracore Downloads](https://static.pepy.tech/badge/neuracore)](https://pepy.tech/project/neuracore) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/neuracore?logo=python&logoColor=gold)](https://pypi.org/project/neuracore/)
+Install the `neuracore` package including all requirements in a **Python>=3.10** environment.
 
 > **Note:** Installing the `ffmpeg` binary is recommended for faster video encoding during recording and decoding during playback/import. If unavailable, Neuracore falls back to PyAV automatically.
 >
@@ -84,12 +49,7 @@ pip install neuracore[import]
 pip install neuracore[examples]
 ```
 
-For alternative environments consult the [Neuracore Quickstart Guide](https://docs.neuracore.com/quickstart/).
-
-</details>
-
-<details>
-<summary>Usage</summary>
+## 💻 Usage
 
 ### Python
 
@@ -116,7 +76,7 @@ action = policy.predict()
 
 ### CLI
 
-Manage datasets, hardware, and cloud training directly from your terminal. The CLI is the fastest way to verify your system and trigger cloud-based AI jobs.
+Manage datasets, hardware, and cloud training directly from your terminal.
 
 ```bash
 # 1. Launch the background data pipeline (required for all streaming tasks)
@@ -137,13 +97,9 @@ neuracore train start --name "MyJob" --dataset "My Robot Dataset" --algo "diffus
 neuracore predict --model "MyJob" --source "top_camera"
 ```
 
-</details>
+## 🍰 A Short Taste
 
-
-<details>
-<summary>🍰 A Short Taste</summary>
-
-Here is a brief glimpse into what Neuracore can do. For a detailed walk-through, please refer to our tutorials and comprehensive documentation.
+Here is an end-to-end glimpse of what an entire Neuracore pipeline looks like in a single script.
 
 ```python
 import neuracore as nc # pip install neuracore
@@ -195,7 +151,7 @@ nc.log_rgb(name="top_camera", rgb=image_array)
 predictions = policy.predict(timeout=5)
 ```
 
-</details>
+## 📖 Quick Links
 
 | Type | Links | Description |
 | :-- | :-- | :-- |
@@ -207,43 +163,21 @@ predictions = policy.predict(timeout=5)
 | **Reference** | **[Environment Variables](https://docs.neuracore.com/env/)** | Securely configuring your Neuracore runtime context. |
 | **Explanation** | **[Contribution Guide](https://docs.neuracore.com/contribute/)** | Guidelines to help you contribute back to the open source project. |
 
-<br>
-
 ## 💻 Supported Models
 
-Neuracore supports state-of-the-art robot learning algorithms out of the box, optimized for throughput and stability. You can also **[upload your own custom algorithms](https://docs.neuracore.com/custom-models/)**  Our Platform provides a flexible plugin interface to collect, train, evaluate, and deploy any policy architecture on our cloud infrastructure.
+Neuracore supports state-of-the-art robot learning algorithms out of the box, optimized for throughput and stability. You can also **[upload your own custom algorithms](https://docs.neuracore.com/custom-models/)** directly using our flexible plugin interface.
 
+| Algorithm | Cloud Training | Inference Speed (ms) | Status |
+| :--- | :---: | :---: | :---: |
+| **Behavioral Cloning (CNN-MLP)** | ✅ | 5-10 | Production |
+| **Diffusion Policy** | ✅ | 15-30 | Production |
+| **Action Chunking Transformer (ACT)** | ✅ | 20-40 | Production |
+| **Flow Matching (pi0)** | ✅ | 25-50 | Beta |
+| **Bring Your Own (Custom Model)** | ✅ | N/A | [Upload Yours →](https://docs.neuracore.com/custom-models/) |
 
-** Some sort of image that shows model performance**
+## 📑 Citation
 
-
-| Algorithm | Architecture | Cloud Training | Inference Speed (ms) | Status |
-| :--- | :--- | :---: | :---: | :---: |
-| **CNN-MLP** | Behavioural Cloning | ✅ | 5-10 | Production |
-| **Diffusion Policy** | Energy-Based Diffusion | ✅ | 15-30 | Production |
-| **ACT** | Action Chunking Transformer | ✅ | 20-40 | Production |
-| **pi0** | Flow Matching (VLA) | ✅ | 25-50 | Beta |
-| **Custom Model** | Bring Your Own | ✅ | N/A | [Upload Yours →](https://docs.neuracore.com/custom-models/) |
-
-<br>
-
-## 🧩 Integrations
-
-Neuracore integrates seamlessly with leading robotics simulators and machine learning platforms.
-
-** have logos or flow framework that looks better **
-
-<br>
-
-| Simulators | Frameworks | ML Platforms |
-| :---: | :---: | :---: |
-| Mujoco, PyBullet, Isaac Gym | ROS1/ROS2, LeRobot, Bigym | Hugging Face, W&B, CometML |
-
-<br>
-
-# 📑 Citation
-
-If Neuracore accelerates your robotics research or product development, we kindly ask that you cite our platform:
+If Neuracore accelerates your robotics research or product development, we kindly ask that you cite our framework:
 
 ```bibtex
 @software{Neuracore,
@@ -255,30 +189,12 @@ If Neuracore accelerates your robotics research or product development, we kindl
 }
 ```
 
-<br>
-
 ## 📜 License
 
 Neuracore is available under the **[MIT License](https://github.com/NeuracoreAI/neuracore/blob/main/LICENSE)**.
 
 See the [`LICENSE.md`](https://github.com/NeuracoreAI/neuracore/blob/main/LICENSE) file for the complete terms and conditions regarding distribution, modification, and commercial use.
 
-<br>
-
 ## 📞 Contact
 
-For bug reports and feature requests related to Neuracore software, please visit [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues). For questions, discussions, and community support, join our active community on [Discord](https://discord.gg/DF5m8V6nbD). We're here to help with all things Neuracore!
-
-<br>
-
-<div align="center">
-  <a href="https://github.com/NeuracoreAI"><img src="./docs/assets/social/logo-social-github.png" width="2%" alt="Neuracore GitHub"></a>
-  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://linkedin.com/company/neuracoreai/"><img src="./docs/assets/social/logo-social-linkedin.png" width="2%" alt="Neuracore LinkedIn"></a>
-  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://x.com/Neuracore_AI"><img src="./docs/assets/social/logo-social-twitter.png" width="2%" alt="Neuracore Twitter"></a>
-  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://www.youtube.com/@neuracoreai"><img src="./docs/assets/social/logo-social-youtube.png" width="2%" alt="Neuracore YouTube"></a>
-  <img src="./docs/assets/social/logo-transparent.png" width="2%" alt="space">
-  <a href="https://discord.gg/DF5m8V6nbD"><img src="./docs/assets/social/logo-social-discord.png" width="2%" alt="Neuracore Discord"></a>
-</div>
+For bug reports and feature requests related to Neuracore software, please visit [GitHub Issues](https://github.com/NeuracoreAI/neuracore/issues). For questions, discussions, and community support, join our active community on [Discord](https://discord.gg/DF5m8V6nbD). We're here to help with all things open-source robotics!
